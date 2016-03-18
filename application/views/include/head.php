@@ -16,8 +16,10 @@
 		<nav>
 			<ul id="navigation">
 				<li><a href="#" title="revenir page d'accueil">Accueil</a></li> 
-				<li><a href="#" title="consulter compte rendu">Consulter les comptes rendus</a></li> 
 				<li><a href="#" title="creer compte rendu">Creer un compte rendu</a></li> 
+				<li><a href="#" title="consulter compte rendu">Consulter les comptes rendus</a></li>
+				<li><a href="#" title="Deconnexion">Deconnexion</a></li>  
+				
 			</ul>
 		</nav>
 		

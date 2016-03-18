@@ -1,3 +1,5 @@
+<!-- PAGE TERMINE -->
+
 <?php
 	include 'include/head_connexion.php';
 ?>
