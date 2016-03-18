@@ -9,7 +9,7 @@
 	
 	<body>
 		<a href="/">
-			<img src="../../asset/image/logo_gsb.png" alt="logo de gsb" >
+			<img src="../../asset/image/logo.jpg" alt="logo de gsb" >
 		</a>
 		
 		<nav>
