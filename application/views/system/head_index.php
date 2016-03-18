@@ -1,0 +1,3 @@
+<?php
+ // HAUT DE PAGE PAGE DE CONNEXION (INDEX)
+?>
