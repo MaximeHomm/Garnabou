@@ -1,10 +1,11 @@
 <?php
-	include testConnecte.php;
+	include 'testConnecte.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
-		<link rel="stylesheet" media="screen" type="text/css" title="style" href="../../style.css" />
+		<!-- <link rel="stylesheet" media="screen" type="text/css" title="style" href="../../style.css" /> -->
+		<meta charset="utf-8">
 	</head>
 	
 	<body>
