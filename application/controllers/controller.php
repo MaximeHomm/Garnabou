@@ -33,7 +33,9 @@ class Controller extends CI_Controller {
 		else
 		{
 			$this->load->helper('url');
-			redirect ('/connecte/');
+			$status = $this->session->userdata('status');
+			 /* $this->load->helper('url');
+			redirect ('/connecte/'); */
 		}
 	}
 	
