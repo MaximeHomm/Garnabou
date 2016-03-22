@@ -11,7 +11,7 @@
 	
 		<form action="connexion.php" method="post">
 			login: <input type="text" name="login" value="" />
-			Mot de Passe: <input type="password" name="mdp value="" />
+			Mot de Passe: <input type="password" name="mdp" value="" />
 			<input type="submit" name="connexion" value="Connexion" />
 		</form>
 
