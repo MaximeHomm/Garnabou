@@ -18,9 +18,14 @@ class DataAccess extends CI_Model{
 	// ARRIVER ICI!!!! voir dataAcces la fleur
 	public function getTestCo ($login, $mdp)
 	{
-		$req = "select VIS_NOM AS Nom, VIS_DATEEMBAUCHE AS MDP
+		$req = "select VIS_LOGIN AS Nom, VIS_MDP AS MDP
 				from visiteur
-				where visiteur.login = ? and visiteur.mdp = ?";	}
+				where visiteur.login = ? and visiteur.mdp = ?";	
+		$rs = $this->db->query($req, array ($login, $mdp));
+		$ligne = $rs->first_row('array');
+		return $ligne;
+	
+	}
 	
 
 
