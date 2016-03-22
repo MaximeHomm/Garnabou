@@ -11,9 +11,10 @@ class Authentification extends CI_Model {
 /** TEST SI CONNECTE
  * @return vrai ou faux
  */
+	
 	public function estConnecte()
 	{
-		return $this->session->userdata('idUser');
+		return $this->session->userdata('authUser');
 	}
 	
 /** ENREGISTRE LES INFOS DU CONNECTE

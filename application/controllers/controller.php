@@ -18,56 +18,25 @@ class Controller extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('connexion');
-	}
 	
 //VERIFICATION AUTHENTIFICATION ET RENVOI SI NON CONNECTE
-	public function _remap($action, $params = array())
+	public function index()
 	{
-		// CHARGEMENT DU MODEL AUTHENTIFICATION
-			$this->load->model('authentification');
+		$this->load->model('authentification');
 		
-		// SI L'UTILISATEUR EST CONNECTE
-			if (!$this->authentif->estConnecte())
-			{
-				$this->load->view('connexion');
-			}
-			
-		// SINON SI
+		if (!$this->authentification->estConnecte())
+		{
+			$data = array();
+			$this->templates->load('site_invite', 'connexion', $data);
+		}
 		
-			else
-			{
-				// LE CHARGEMENT DE L'ACCUEIL EST DEMANDE
-				if ($action == 'accueil')
-				{
-					$this->load->view('accueil');
-				}
-				
-				// LE CHARGEMENT DE LA CREATION EST DEMANDE
-				else if ($action == 'creation')
-				{
-					$this->load->view('creation');
-				}
-				
-				//LE CHARGEMENT DE LA CONSULTATION EST DEMANDE
-				else if ($action == 'creation')
-				{
-					$this->load->model('consultation');
-				}
-				
-				//LA DECONNEXION EST DEMANDE
-				else if ($action == 'deconnexion')
-				{
-					$this->load->model('authentification');
-					$this->authentification->deconnecter();
-
-				}
-				
-			}
-		
+		else
+		{
+			$this->load->helper('url');
+			redirect ('/connecte/');
+		}
 	}
 	
-	
 }
+
+?>

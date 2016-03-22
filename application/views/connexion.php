@@ -1,8 +1,5 @@
 <!-- PAGE TERMINE -->
 
-<?php
-	include 'include/head_connexion.php';
-?>
 <!--  CONTENU DE LA PAGE -->
 
 	<!-- TEXTE AVANT FORMULAIRE -->
@@ -19,7 +16,3 @@
 		</form>
 
 
-<!-- FIN CONTENU PAGE -->
-<?php 
-	include 'include/footer.php';	
-?>
