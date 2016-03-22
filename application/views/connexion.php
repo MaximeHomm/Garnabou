@@ -13,8 +13,8 @@
 	<!--  FORUMULAIRE DE CONNEXION -->
 	
 		<form action="connexion.php" method="post">
-			Identifiant: <input type="text" name="indentifiant" value="" />
-			Date d'embauche: <input type="password" name="mot_de_passe" value="" />
+			login: <input type="text" name="login" value="" />
+			Mot de Passe: <input type="password" name="mdp value="" />
 			<input type="submit" name="connexion" value="Connexion" />
 		</form>
 
