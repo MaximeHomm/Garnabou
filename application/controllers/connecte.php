@@ -26,7 +26,7 @@ class Controller extends CI_Controller {
 		// CHARGEMENT DU MODEL AUTHENTIFICATION
 		$this->load->model('authentification');
 
-		// SI L'UTILISATEUR EST CONNECTE
+		// SI L'UTILISATEUR Est non connecte
 		if (!$this->authentification->estConnecte())
 		{
 			$this->load->helper('url');
@@ -37,8 +37,13 @@ class Controller extends CI_Controller {
 
 		else
 		{
+			if ($action == 'index')
+			{
+				$data = array();
+			} 
+				
 			// LE CHARGEMENT DE L'ACCUEIL EST DEMANDE
-			if ($action == 'accueil')
+			else if ($action == 'accueil')
 			{
 				$data = array();
 				$this->templates->load('site', 'accueil', $data);

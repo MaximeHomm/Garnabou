@@ -32,7 +32,6 @@ class Controller extends CI_Controller {
 		
 		else
 		{
-		 	$this->load->helper('url');
 			redirect ('/connecte/');
 		}
 	}
@@ -56,7 +55,7 @@ class Controller extends CI_Controller {
 			$this->templates->load('invite', 'accueil', $data);
 		}
 		
-		$this->authentification->connecter($authUser['login']);
+		$this->authentification->connecter($authUser['login'], $authUser['mdp'] );
 		$this->index();
 		
 	}
