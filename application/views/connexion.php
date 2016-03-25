@@ -1,3 +1,7 @@
+<?php 
+	$path = base_url();
+?>
+
 <!-- PAGE TERMINE -->
 
 <!--  CONTENU DE LA PAGE -->
@@ -9,7 +13,7 @@
 	
 	<!--  FORUMULAIRE DE CONNEXION -->
 	
-		<form action="connexion.php" method="post">
+		<form action="<?php echo $path.'controller/connecter';?>" method="post">
 			login: <input type="text" name="login" value="" />
 			Mot de Passe: <input type="password" name="mdp" value="" />
 			<input type="submit" name="connexion" value="Connexion" />
