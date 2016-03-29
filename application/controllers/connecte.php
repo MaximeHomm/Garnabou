@@ -37,13 +37,13 @@ class Controller extends CI_Controller {
 
 		else
 		{
-			if ($action == 'index')
+			 /* if ($action == 'index')
 			{
 				$data = array();
 			} 
-				
+				*/
 			// LE CHARGEMENT DE L'ACCUEIL EST DEMANDE
-			else if ($action == 'accueil')
+			if ($action == 'accueil')
 			{
 				$data = array();
 				$this->templates->load('site', 'accueil', $data);
