@@ -22,12 +22,11 @@ class Authentification extends CI_Model {
  * @param $identifiant
  * @param $password
  */
-	public function connecter ($idUser, $login, $mdp)
+	public function connecter ($login, $mdp)
 	{
 		$authUser = array(
-				'idUser' => $idUser,
-				'mdp'  => $login,
-				'login' => $mdp
+				'login'  => $login,
+				'mdp' => $mdp
 		);
 		$this->session->set_userdata('$authUser');	
 	}
