@@ -52,7 +52,7 @@ class Controller extends CI_Controller {
 		else
 		{
 			$data = array();
-			$this->templates->load('site_invite', 'accueil', $data);
+			$this->templates->load('site', 'accueil', $data);
 		}
 		
 		$this->authentification->connecter($authUser['login'], $authUser['mdp'] );

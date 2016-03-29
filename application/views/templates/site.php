@@ -7,7 +7,7 @@
 	<body>
 	<header>
 
-			<img src="images/logo.jpg" alt="logo de gsb" >
+			<img src="templates/images/logo.jpg" alt="logo de gsb" >
 		
 			
 		<nav>
