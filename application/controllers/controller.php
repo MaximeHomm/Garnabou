@@ -56,7 +56,7 @@ class Controller extends CI_Controller {
 		}
 		
 		$this->authentification->connecter($authUser['login'], $authUser['mdp'] );
-		$this->index();
+		
 		
 	}
 	

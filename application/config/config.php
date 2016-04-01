@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://github/Garnabou/';
+$config['base_url'] = 'http://127.0.0.1/www/SIO2/Garnabou/';
 
 /*
 |--------------------------------------------------------------------------
